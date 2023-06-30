@@ -1,0 +1,16 @@
+.parcel_list {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+.parcel_list::-webkit-scrollbar {
+    background-color: #2a2828;
+    border: 1px solid #3c79d8;
+    height: 7px;
+}
+
+.parcel_list::-webkit-scrollbar-thumb {
+    background-color: #3c79d8;
+}

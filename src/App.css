@@ -1,0 +1,24 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #2a2828;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.mumbai {
+  background-color: #f0155e;
+}
+
+.delhi {
+  background-color: #e3b732;
+}
+
+.kolkata {
+  background-color: #3c79d8;
+}

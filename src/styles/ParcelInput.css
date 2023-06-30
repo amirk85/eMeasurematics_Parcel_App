@@ -1,0 +1,47 @@
+.parcel_container {
+    margin-top: 1rem;
+    padding: 2rem;
+    border: 2px solid gray;
+    display: inline-block;
+}
+
+.parcel_container_form {
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.parcel_container_form>label {
+    margin-right: 1rem;
+    color: white;
+}
+
+.parcel_container_form>input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+}
+
+.parcel_container_form>input[type="text"]:focus {
+    outline: none;
+    border-color: #fff;
+    box-shadow: 0 0 5px #fff;
+}
+
+.parcel_container_form>select {
+    padding: 8px 12px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+}
+
+.parcel_container_form>select:focus {
+    outline: none;
+    border-color: #fff;
+    box-shadow: 0 0 5px #fff;
+}
+
+.parcel_container_form>select option {
+    background-color: #333;
+    color: #fff;
+}

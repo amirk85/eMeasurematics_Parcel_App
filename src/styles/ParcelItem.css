@@ -1,0 +1,30 @@
+.parcel_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.selected {
+  border: 2px dotted cyan;
+  margin: 0;
+}
+
+.parcel_item > p {
+  color: white;
+}
+
+.parcel_item > div {
+  border: 1px solid #2a2828;
+  padding: 0.25rem 1rem;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.parcel_item > div > h6 {
+  font-size: 1rem;
+}
