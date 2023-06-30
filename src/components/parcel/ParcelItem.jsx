@@ -1,6 +1,5 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-
 import { HANDLE_SELECT_PARCEL } from "../../store/parcel-slice";
 
 import "../../styles/ParcelItem.css";

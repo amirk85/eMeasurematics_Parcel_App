@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/ParcelInput.css";
-import ButtonList from "../footer/ButtonList";
 import { useSelector } from "react-redux";
-
+import { LOCATIONS } from "../../dummyData/LOCATIONS";
+import ButtonList from "../footer/ButtonList";
+import "../../styles/ParcelInput.css";
 const ParcelInput = (props) => {
   const [enteredParcelName, setEnteredParcelName] = useState("");
   const [selectedGroup, setSelectedGroup] = useState("Mumbai");
-  const { locations } = props;
 
   const { selectedParcel } = useSelector((state) => state.parcel);
 
@@ -35,7 +34,7 @@ const ParcelInput = (props) => {
             value={selectedGroup}
             onChange={(e) => setSelectedGroup(e.target.value)}
           >
-            {locations.map((location) => (
+            {LOCATIONS.map((location) => (
               <option key={location.id} value={location.name}>
                 {location.name}
               </option>

@@ -1,6 +1,6 @@
 export const parcelActions = {
+  // Add Parcel After
   ADD_AFTER(state, { payload }) {
-    console.log(state.selectedParcel, payload);
     if (!state.selectedParcel) {
       alert("Please select a parcel first!");
     } else if (payload.name && payload.group) {
@@ -20,13 +20,13 @@ export const parcelActions = {
       ) {
         updatedParcels[i].sequence++;
       }
-      console.log(updatedParcels, "updatedParcels");
       state.parcelData = updatedParcels;
       state.selectedParcel = null;
     }
   },
+
+  // Add Parcel Before
   ADD_BEFORE(state, { payload }) {
-    console.log(payload);
     if (!state.selectedParcel) {
       alert("Please select a parcel first!");
     } else if (payload.name && payload.group) {
@@ -52,6 +52,8 @@ export const parcelActions = {
     }
   },
 
+  // Replace Parcel
+
   PARCEL_REPLACE(state, { payload }) {
     if (!state.selectedParcel) {
       alert("Please select a parcel first!");
@@ -70,12 +72,14 @@ export const parcelActions = {
     }
   },
 
+  // Select Parcel
   HANDLE_SELECT_PARCEL(state, { payload }) {
     if (state.selectedParcel?.id === payload.id) {
       state.selectedParcel = null;
     } else state.selectedParcel = payload;
   },
 
+  // Delete Parcel
   PARCEL_DELETE(state) {
     if (state.selectedParcel == null) {
       alert("Please select a parcel first!");
